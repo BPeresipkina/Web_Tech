@@ -1,0 +1,120 @@
+/* Общее */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
+
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(../fonts/IBMPlexMono-Regular.ttf);
+}
+
+body {
+    background-color: rgb(250, 223, 181);
+    font-family: IBMPlexMono, sans-serif;
+    color: darkslategrey;
+}
+
+/* Начало блока Header */
+
+.header {
+    padding: 40px 0px 0px 0px;
+}
+
+.special_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .special_container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+    width: 75px;
+    height: 75px;
+}
+
+.main_titel_header, .big_title{
+    font-size: IBMPlexMono;
+    font-size: 30px;
+}
+
+.menu{
+    margin-left: 150px;
+    display: flex;
+    list-style: none;
+}
+
+.menu_item{
+    margin-right: 50px;
+}
+
+.menu_item a{
+    font-size: 20px;
+    color: darkred;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu_item a:hover{
+    border: 2px solid darkred;
+}
+
+/* Конец блока Header */
+
+/* Начало блока Section */
+
+.main_content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main_content_info{
+    max-width: 1200px;
+}
+
+.content_title{
+    font-family: Family New, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+}
+
+.content_text{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 56px;
+    text-align: justify;
+}
+
+/* Конец блока Section */
+
+/* Начало блока Footer */
+
+.footer{
+    padding: 20px;
+}
+
+.footer .special_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.footer .up_link{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Конец блока Footer */
