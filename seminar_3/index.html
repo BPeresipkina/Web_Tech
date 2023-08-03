@@ -1,0 +1,31 @@
+<!-- Создайте всплывающее окно, которое спрашивает 
+    (у вводящего пользователя на экране) 
+    ввод вашего любимого фильма и если ввод неверен, 
+    то программа отправляет запрос alert “Попробуйте ещё раз”. 
+    В функции должны быть минимум 1 условие(истиное и ложное). 
+    Если можете - используйте вариант создания своей функции, 
+    пример: function Вашеимяфункциитут()"
+    Если не получается - использовуйте prompt и alert. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        let film = prompt('Какой мой любимый фильм?');
+        while (film != 'Меч короля Артура') {
+            let right = confirm('Неверно, хочешь попробовать еще раз?');
+            if (right == true) {
+                film = prompt('Какой мой любимый фильм?');
+            } else { break }
+        }
+    </script>
+</body>
+
+</html>
